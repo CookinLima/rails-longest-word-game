@@ -4,6 +4,7 @@
   <form action="/score" method="POST">
     <input type="text" name="word" placeholder="">
     <input type="submit">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :name, @letters%>
   </form>
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </div>
